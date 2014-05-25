@@ -1,0 +1,22 @@
+@import "foundation/components/grid";
+@import "ux/variables";
+
+section.hero-container {
+  width: 100%;
+  background-color: $black;
+  .hero {
+    @include grid-row();
+    padding-top: rem-calc(160);
+    padding-bottom: rem-calc(20);
+    .hero-content {
+      @include grid-column(12);
+      padding: rem-calc(20);
+      h2 {
+        color: #fff;
+      }
+      a
+        {color: $yellow;
+      }
+    }
+  }
+}
