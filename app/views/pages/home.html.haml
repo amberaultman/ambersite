@@ -10,19 +10,30 @@
 
 %section#timeline
   #timeline-container.js-masonry{"data-masonry-options" => "{ \"columnWidth\": 400, \"itemSelector\": \".item\", \"isFitWidth\": true, \"gutter\": 20 }"}
-    .item
+    .item.dribbble
+      = image_tag "icon-dribbble.svg", :class => "item-icon"
       = image_tag "http://placehold.it/400x300", :class => "item-photo"
-      / = image_tag "icon-dribbble.png", :class => "item-icon"
-    .item
-      = image_tag "http://placehold.it/400x300"
-    .item
-      = image_tag "http://placehold.it/400x300"
-    .item
+    .item.about
+      = image_tag "icon-about.svg", :class => "item-icon"
+      = image_tag "http://placehold.it/400x300", :class => "item-photo"
+    .item.dribbble
+      = image_tag "icon-dribbble.svg", :class => "item-icon"
+      = image_tag "http://placehold.it/400x300", :class => "item-photo"
+    .item.work
+      = image_tag "icon-work.svg", :class => "item-icon"
+      = image_tag "view-project.svg", :class => "more"
       = image_tag "http://placehold.it/1240x800"
-    .item
-      = image_tag "http://placehold.it/400x300"
-    .item
-      = image_tag "http://placehold.it/1240x800"
+    .item.about
+      = image_tag "icon-about.svg", :class => "item-icon"
+      = image_tag "http://placehold.it/400x300", :class => "item-photo"
+    .item.writing
+      = image_tag "icon-writing.svg", :class => "item-icon"
+      %a{:title => "", :href => "styleprototypes"}
+        = image_tag "read-article.svg", :class => "more"
+      %h1.blog
+        Style Prototypes:
+      %h2.blog
+        A Happy Medium
 
 
 

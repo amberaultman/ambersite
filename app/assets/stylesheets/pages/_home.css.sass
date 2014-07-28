@@ -1,5 +1,6 @@
 section#hero-container
   background-color: $black
+  margin-bottom: rem-calc(20)
   #hero
     +grid-row
     padding-top: rem-calc(20)
@@ -31,12 +32,60 @@ section#hero-container
   margin: 0 auto
   .item
     margin-bottom: rem-calc(20)
-    // .item-photo
-    //   position: relative
-    //   z-index: 1
-    // .item-icon
-    //   position: left top
-    //   z-index: 2
+    background-color: $black
+    .more
+      width: 44%
+      max-width: rem-calc(213)
+      right: 0px
+      bottom: 0px
+      z-index: 0
+      position: absolute
+    .item-icon
+      width: 12%
+      max-width: rem-calc(48)
+      left: 0px
+      top: 0px
+      z-index: 0
+      position: absolute
+    .item-photo
+      &:hover, &:active
+        opacity: 0.2
+    &.writing
+      width: rem-calc(400)
+      height: rem-calc(300)
+      padding: rem-calc(50) rem-calc(30)
+      @media #{$medium}
+        width: rem-calc(820)
+        height: rem-calc(400)
+        padding: rem-calc(60) rem-calc(60)
+      @media #{$large}
+        width: rem-calc(1240)
+        height: rem-calc(500)
+      h1.blog
+        color: $pink
+        font-family: $body-font-family
+        font-size: rem-calc(40)
+        margin-bottom: 0
+        @media #{$medium}
+          font-size: rem-calc(70)
+        @media #{$large}  
+          font-size: rem-calc(100)
+      h2.blog
+        color: $pink
+        font-family: $body-font-family 
+        font-size: rem-calc(30)
+        line-height: rem-calc(35)
+        @media #{$medium}
+          font-size: rem-calc(60)
+          line-height: rem-calc(60)
+        @media #{$large}  
+          font-size: rem-calc(80)
+          line-height: rem-calc(70)
+
+
+      
+
+
 
 
 

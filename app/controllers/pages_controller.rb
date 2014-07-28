@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
-  def styleone
+  def home
   end
 
-  def styletwo
+  def styleprototypes
   end
+
 end
