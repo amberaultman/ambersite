@@ -1,0 +1,32 @@
+.contain-to-grid.sticky
+  %nav.top-bar{:'data-topbar' => ''}
+    %ul.title-area
+      %li.name
+        =image_tag "logo.png"
+      %li.toggle-topbar.menu-icon
+        %a{:title => "", :href => ""}
+          %span
+
+    %section.top-bar-section
+      %ul.right
+        %li= mail_to "amber.aultman@gmail.com", "EMAIL"
+        %li= link_to "TWITTER", "https://twitter.com/amberaultman"
+  #nav-filters  
+    %ul
+      %li.active.all
+        %a{:title => "ALL", :href => ""}
+          ALL
+      %li.work
+        %a{:title => "WORK", :href => ""}
+          WORK
+      %li.writing
+        %a{:title => "WRITING", :href => ""}
+          WRITING
+      %li.dribbble
+        %a{:title => "DRIBBBLE", :href => ""}
+          DRIBBBLE
+      %li.about
+        %a{:title => "ABOUT", :href => ""}
+          ABOUT                   
+
+

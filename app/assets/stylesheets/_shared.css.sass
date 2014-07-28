@@ -1,0 +1,68 @@
+li.name
+  img
+    width: rem-calc(40)
+    margin: rem-calc(15) rem-calc(20)
+
+.top-bar-section
+  ul
+    li
+      a
+        font-weight: 700
+        
+#nav-filters
+  background-color: $white
+  ul
+    @extend .inline-list
+    +grid-row
+    li
+      height: rem-calc(60)
+      margin: 0
+      text-align: center
+      padding: rem-calc(20) 0
+      font-family: $header-font-family
+      a
+        color: $black
+        font-weight: 700
+        font-size: rem-calc(14)  
+      &.all
+        width: 15%
+        border-bottom: solid rem-calc(7) $gray
+        &:hover, &:active, &.active
+          background-image: url(image_path('triangle-gray.png'))
+          background-repeat: no-repeat
+          background-position: 50% 100%
+          background-size: rem-calc(18)
+      &.work
+        width: 18%
+        border-bottom: solid rem-calc(7) $green
+        &:hover, &:active
+          background-image: url(image_path('triangle-green.png'))
+          background-repeat: no-repeat
+          background-position: 50% 100%
+          background-size: rem-calc(18)
+      &.writing
+        border-bottom: solid rem-calc(7) $yellow
+        width: 23%
+        &:hover, &:active
+          background-image: url(image_path('triangle-yellow.png'))
+          background-repeat: no-repeat
+          background-position: 50% 100%
+          background-size: rem-calc(18)
+      &.dribbble
+        width: 23%
+        border-bottom: solid rem-calc(7) $pink
+        &:hover, &:active
+          background-image: url(image_path('triangle-pink.png'))
+          background-repeat: no-repeat
+          background-position: 50% 100%
+          background-size: rem-calc(18)
+      &.about
+        width: 21%
+        border-bottom: solid rem-calc(7) $red
+        &:hover, &:active
+          background-image: url(image_path('triangle-red.png'))
+          background-repeat: no-repeat
+          background-position: 50% 100%
+          background-size: rem-calc(18)
+            
+

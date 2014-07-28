@@ -1,0 +1,43 @@
+section#hero-container
+  background-color: $black
+  #hero
+    +grid-row
+    padding-top: rem-calc(20)
+    @media #{medium}
+      padding-top: rem-calc(60)
+    padding-bottom: rem-calc(20)
+    #hero-content
+      +grid-column(12)
+      padding: rem-calc(20)
+      h1.xtralrg
+        color: $pink
+        font-family: $body-font-family
+        font-size: rem-calc(60)
+        margin-bottom: 0
+        @media #{$medium}
+          font-size: rem-calc(100)
+        @media #{$large}  
+          font-size: rem-calc(180)
+      p
+        color: $pink
+        font-size: rem-calc(18)
+        @media #{$medium}
+          font-size: rem-calc(24)
+      a
+        color: $yellow
+        text-decoration: underline
+
+#timeline-container.js-masonry
+  margin: 0 auto
+  .item
+    margin-bottom: rem-calc(20)
+    // .item-photo
+    //   position: relative
+    //   z-index: 1
+    // .item-icon
+    //   position: left top
+    //   z-index: 2
+
+
+
+

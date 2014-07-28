@@ -9,7 +9,22 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require foundation_and_overrides
- 
  *= require_tree .
- */
+
+// Variables
+@import "_variables"
+
+// Foundation
+@import "foundation_and_overrides"
+
+//Global
+@import "_shared"
+
+// Components
+@import "components/*"
+
+// Pages
+@import "pages/*"
+
+
+
