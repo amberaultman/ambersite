@@ -13,15 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require turbolinks
 //= require masonry
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
-
-// var container = document.querySelector('#timeline-container');
-// var msnry = new Masonry( container, {
-//   // options
-//   columnWidth: 400,
-//   itemSelector: '.item'
-// });

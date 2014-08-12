@@ -1,0 +1,4 @@
+class WritingsController < ApplicationController
+
+
+end

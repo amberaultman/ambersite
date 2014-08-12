@@ -30,6 +30,37 @@ section#hero-container
 
 #timeline-container.js-masonry
   margin: 0 auto
+  .toggleOverlay
+    position: relative
+    .item-details
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      background-color: rgba(26,26,26,0.9)
+      .date
+        padding-left: rem-calc(60)
+        padding-top: rem-calc(18)
+        color: $gray
+      h3
+        padding: rem-calc(20)
+        color: white
+        font-family: $body-font-family
+        font-size: rem-calc(30)
+      .view-on-dribbble
+        color: $pink
+        position: absolute
+        bottom: rem-calc(20)
+        right: rem-calc(20)
+        font-family: $header-font-family
+      .view-on-somewhere
+        color: $red
+        position: absolute
+        bottom: rem-calc(20)
+        right: rem-calc(20)
+        font-family: $header-font-family
+      .more-arrow
+        width: rem-calc(40)
   .item
     margin-bottom: rem-calc(20)
     background-color: $black
@@ -45,11 +76,8 @@ section#hero-container
       max-width: rem-calc(48)
       left: 0px
       top: 0px
-      z-index: 0
+      z-index: 1
       position: absolute
-    .item-photo
-      &:hover, &:active
-        opacity: 0.2
     &.writing
       width: rem-calc(400)
       height: rem-calc(300)

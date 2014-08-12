@@ -10,22 +10,43 @@
 
 %section#timeline
   #timeline-container.js-masonry{"data-masonry-options" => "{ \"columnWidth\": 400, \"itemSelector\": \".item\", \"isFitWidth\": true, \"gutter\": 20 }"}
-    .item.dribbble
+    .item.dribbble#2014-8-1-d1.toggleOverlay
       = image_tag "icon-dribbble.svg", :class => "item-icon"
       = image_tag "http://placehold.it/400x300", :class => "item-photo"
-    .item.about
+      .item-details.hide
+        .date
+          Jun 22, 2014
+        %h3
+          Learning to be #rappers at @ignitewithus
+        .view-on-dribbble
+          VIEW ON DRIBBBLE
+          = image_tag "icon-arrow-pink.svg", :class => "more-arrow"
+    .item.about#2014-8-3-a1.toggleOverlay
       = image_tag "icon-about.svg", :class => "item-icon"
       = image_tag "http://placehold.it/400x300", :class => "item-photo"
-    .item.dribbble
-      = image_tag "icon-dribbble.svg", :class => "item-icon"
+      .item-details.hide
+        .date
+          Aug 2, 2014
+        %h3
+          Some brilliant caption goes here! Alright!
+        .view-on-somewhere
+          VIEW ON SOMEWHERE
+          = image_tag "icon-arrow-red.svg", :class => "more-arrow"
+    .item.about#2014-8-2-a1.toggleOverlay
+      = image_tag "icon-about.svg", :class => "item-icon"
       = image_tag "http://placehold.it/400x300", :class => "item-photo"
+      .item-details.hide
+        .date
+          Aug 2, 2014
+        %h3
+          Some brilliant caption goes here! Alright!
+        .view-on-somewhere
+          VIEW ON SOMEWHERE
+          = image_tag "icon-arrow-red.svg", :class => "more-arrow"       
     .item.work
       = image_tag "icon-work.svg", :class => "item-icon"
       = image_tag "view-project.svg", :class => "more"
       = image_tag "http://placehold.it/1240x800"
-    .item.about
-      = image_tag "icon-about.svg", :class => "item-icon"
-      = image_tag "http://placehold.it/400x300", :class => "item-photo"
     .item.writing
       = image_tag "icon-writing.svg", :class => "item-icon"
       %a{:title => "", :href => "styleprototypes"}
@@ -34,7 +55,3 @@
         Style Prototypes:
       %h2.blog
         A Happy Medium
-
-
-
-
