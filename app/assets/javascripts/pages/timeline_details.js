@@ -1,5 +1,11 @@
 $(document).ready(function() {
-  $('.toggleOverlay').click(function() {
-    $(this).children('.item-details').toggle();
+  $('.toggleOverlay').click(function(e) {
+    $('.item-details').hide();
+    $(this).children('.item-details').show();
+    e.stopPropagation();
+  });
+
+  $(this).click(function() {
+    $('.item-details').hide();
   });
 });
